@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="EventManager.Entities.Address">
+    <Position X="11.25" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAACAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Entities\Address.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventManager.Entities.Location">
+    <Position X="6.5" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Location.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventManager.Entities.Participant">
+    <Position X="0.5" Y="2" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Participant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventManager.Entities.User">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventManager.Aggregates.Meeting">
+    <Position X="5.5" Y="3" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>BAgAgAAAAAAgAEAAAAIAAAAAAAgAAAAAACAAAAAEAAA=</HashCode>
+      <FileName>Aggregates\Meeting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventManager.Entities.Speaker">
+    <Position X="0.5" Y="5.5" Width="2.75" />
+    <InheritanceLine Type="EventManager.Entities.Participant" FixedFromPoint="true">
+      <Path>
+        <Point X="1.875" Y="3.425" />
+        <Point X="1.875" Y="5.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Entities\Speaker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="EventManager.Entities.Availability">
+    <Position X="10.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAABAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Participant.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
