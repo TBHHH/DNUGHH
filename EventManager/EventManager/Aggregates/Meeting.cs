@@ -1,16 +1,15 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="Meeting.cs" company="">
-//   
+// <copyright file="Meeting.cs" company="Dotnet Usergroup Hamburg">
+//   2012
 // </copyright>
-// <summary>
-//   The meeting.
-// </summary>
 // --------------------------------------------------------------------------------------------------------------------
+
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using EventManager.Contract.BaseClasses;
+using EventManager.Contract.BaseClasses.BusinessRules;
 using EventManager.Entities;
 
 namespace EventManager.Aggregates
@@ -20,6 +19,15 @@ namespace EventManager.Aggregates
     /// </summary>
     public class Meeting : BaseEntity
     {
+        public Meeting()
+        {
+            AddRule(new ValidateStringLength("Title"));
+            AddRule(new ValidateStringLength("Description"));
+
+
+            
+        }
+
         /// <summary>
         /// Gets or sets Title.
         /// </summary>
@@ -56,7 +64,6 @@ namespace EventManager.Aggregates
                 // tbd Picture 
             }
         }
-
 
         /// <summary>
         /// Gets or sets Location.

@@ -41,6 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseClasses\BaseEntity.cs" />
+    <Compile Include="BaseClasses\BusinessRules\BusinessRule.cs" />
+    <Compile Include="BaseClasses\BusinessRules\ValidateNotNull.cs" />
+    <Compile Include="BaseClasses\BusinessRules\ValidateStringLength.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
