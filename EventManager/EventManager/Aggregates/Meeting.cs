@@ -22,10 +22,7 @@ namespace EventManager.Aggregates
         public Meeting()
         {
             AddRule(new ValidateStringLength("Title"));
-            AddRule(new ValidateStringLength("Description"));
-
-
-            
+            AddRule(new ValidateStringLength("Description"));   
         }
 
         /// <summary>
